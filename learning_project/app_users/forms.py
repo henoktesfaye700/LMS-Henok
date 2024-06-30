@@ -23,10 +23,10 @@ class UserProfileInfoForm(forms.ModelForm):
     bio = forms.CharField(required=False)
     teacher = 'teacher'
     student = 'student'
-    parent = 'parent'
+
     user_types = [
         (student, 'student'),
-        (parent, 'parent'),
+        
     ]
     user_type = forms.ChoiceField(required=True, choices=user_types)
 
